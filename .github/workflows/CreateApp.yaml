@@ -10,13 +10,13 @@ on:
         required: false
         default: '.'
       name:
-        description: property-mgmt-sln
+        description: Name
         required: true
       publisher:
-        description: calvins
+        description: Publisher
         required: true
       idrange:
-        description: ID range (50000..51519900)
+        description: ID range (from..to)
         required: true
       sampleCode:
         description: Include Sample code?
@@ -25,7 +25,7 @@ on:
       directCommit:
         description: Direct Commit?
         type: boolean
-        default: true
+        default: false
       useGhTokenWorkflow:
         description: Use GhTokenWorkflow for PR/Commit?
         type: boolean
