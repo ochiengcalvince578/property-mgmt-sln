@@ -1,4 +1,4 @@
-name: 'property-mgmt-sln'
+name: 'Create a new app'
 
 run-name: "Create a new app in [${{ github.ref_name }}]"
 
