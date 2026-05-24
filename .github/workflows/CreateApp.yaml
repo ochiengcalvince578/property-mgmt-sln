@@ -1,4 +1,4 @@
-name: 'Create a new app'
+name: 'property-mgmt-sln'
 
 run-name: "Create a new app in [${{ github.ref_name }}]"
 
@@ -6,17 +6,17 @@ on:
   workflow_dispatch:
     inputs:
       project:
-        description: Project name if the repository is setup for multiple projects
+        description: Project name if the repository is setup for multiple project
         required: false
         default: '.'
       name:
-        description: Name
+        description: property-mgmt-sln
         required: true
       publisher:
-        description: Publisher
+        description: calvins
         required: true
       idrange:
-        description: ID range (from..to)
+        description: ID range (50000..51519900)
         required: true
       sampleCode:
         description: Include Sample code?
@@ -25,7 +25,7 @@ on:
       directCommit:
         description: Direct Commit?
         type: boolean
-        default: false
+        default: true
       useGhTokenWorkflow:
         description: Use GhTokenWorkflow for PR/Commit?
         type: boolean
